@@ -1,3 +1,4 @@
+import Branches from "./components/Branches";
 import Header from "./components/Header";
 import HeroSlider from "./components/HeroSlider";
 import RestaurantMenu from "./components/RestaurantMenu";
@@ -12,7 +13,15 @@ export default function Home() {
    <HeroSlider/>
    <RestaurantMenu/>
    <MoreInformation />
-
+   <Branches/>
+<h2>222</h2>
+<h2>222</h2>
+<h2>222</h2>
+<h2>222</h2>
+<h2>222</h2>
+<h2>222</h2>
+<h2>222</h2>
+<h2>222</h2>
 
 
     </main>
