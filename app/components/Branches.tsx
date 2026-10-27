@@ -17,27 +17,27 @@ return(
 
 <>
 
+<h3 className=" flex justify-center">ترخینه گردی</h3>
 
-<div className="moreBranche flex justify-around">
+<div className="moreBranche grid grid-cols-4 mt-15 ">
 
 
 
-<div className="vanak">
-    <Card className="relative mx-auto w-full max-w-sm pt-0">
-      <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
-      <img
-        src="https://avatar.vercel.sh/shadcn1"
+<div className="vanak ">
+    <Card className="  relative mx-auto w-full max-w-sm pt-0">
+      <div className=" absolute inset-0 z-30 aspect-video " />
+    <img
+        src="Images/Branches-Image.png"
         alt="Event cover"
-        className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
+        className="relative z-20 aspect-video w-full object-cover "
       />
       <CardHeader>
         <CardAction>
-          <Badge variant="secondary">Featured</Badge>
+          {/* <Badge variant="secondary">شعبه اکباتان</Badge> */}
         </CardAction>
-        <CardTitle>Design systems meetup</CardTitle>
+        <CardTitle>شعبه اکباتان</CardTitle>
         <CardDescription>
-          A practical talk on component APIs, accessibility, and shipping
-          faster.
+        شهرک اکباتان فاز 3 مجتمع تجاری کوروش طبقه نهم
         </CardDescription>
       </CardHeader>
       <CardFooter>
@@ -49,20 +49,19 @@ return(
 
 <div className="aghdasieh">
     <Card className="relative mx-auto w-full max-w-sm pt-0">
-      <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
-      <img
-        src="https://avatar.vercel.sh/shadcn1"
+      <div className="absolute inset-0 z-30 aspect-video" />
+     <img
+        src="Images/Branches-1Image.png"
         alt="Event cover"
-        className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
+        className="relative z-20 aspect-video w-full object-cover "
       />
       <CardHeader>
         <CardAction>
-          <Badge variant="secondary">Featured</Badge>
+          {/* <Badge variant="secondary">شعبه اقدسیه </Badge> */}
         </CardAction>
-        <CardTitle>Design systems meetup</CardTitle>
+        <CardTitle>شعبه اقدسیه</CardTitle>
         <CardDescription>
-          A practical talk on component APIs, accessibility, and shipping
-          faster.
+     خیابان اقدسیه نرسیده به میدان خیام پلاک 9
         </CardDescription>
       </CardHeader>
       <CardFooter>
@@ -75,20 +74,19 @@ return(
 
 <div className="chalos">
     <Card className="relative mx-auto w-full max-w-sm pt-0">
-      <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
+      <div className="absolute inset-0 z-30 " />
       <img
-        src="https://avatar.vercel.sh/shadcn1"
+        src="Images/Branches-1Image.png"
         alt="Event cover"
-        className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
+        className="relative z-20 aspect-video w-full object-cover "
       />
       <CardHeader>
         <CardAction>
-          <Badge variant="secondary">Featured</Badge>
+          {/* <Badge variant="secondary">شعبه ونک</Badge> */}
         </CardAction>
-        <CardTitle>Design systems meetup</CardTitle>
+        <CardTitle>شعبه ونک</CardTitle>
         <CardDescription>
-          A practical talk on component APIs, accessibility, and shipping
-          faster.
+      میدان ونک خیابان فردوسی نبش کوچه نیلوفر پلاک 24
         </CardDescription>
       </CardHeader>
       <CardFooter>
@@ -101,11 +99,11 @@ return(
 
 <div className="akbatan">
     <Card className="relative mx-auto w-full max-w-sm pt-0">
-      <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
+      <div className="absolute inset-0 z-30 " />
       <img
-        src="https://avatar.vercel.sh/shadcn1"
+        src="Images/Branches-Image.png"
         alt="Event cover"
-        className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
+        className="relative z-20 aspect-video w-full object-cover "
       />
       <CardHeader>
         <CardAction>
@@ -113,8 +111,7 @@ return(
         </CardAction>
         <CardTitle>شعبه چالوس</CardTitle>
         <CardDescription>
-          A practical talk on component APIs, accessibility, and shipping
-          faster.
+        چالوس خیابان 17 شهریور بعد کوچه کوروش جنب داروخانه 
         </CardDescription>
       </CardHeader>
       <CardFooter>
