@@ -17,9 +17,9 @@ return(
 
 <>
 
-<h3 className=" flex justify-center">ترخینه گردی</h3>
+<h3 className=" flex justify-center mt-15 text-2xl font-bold">ترخینه گردی</h3>
 
-<div className="moreBranche grid grid-cols-4 mt-15 ">
+<div className="moreBranche grid grid-cols-4 my-15 ">
 
 
 
@@ -41,7 +41,8 @@ return(
         </CardDescription>
       </CardHeader>
       <CardFooter>
-        <Button className="w-full">View Event</Button>
+               <Button className="w-full cursor-pointer rounded-lg border border-green-700 bg-white px-4 py-2 text-sm text-green-700 transition-colors hover:bg-green-50">تماشای شعبه </Button>
+
       </CardFooter>
     </Card>
 </div>
@@ -65,7 +66,8 @@ return(
         </CardDescription>
       </CardHeader>
       <CardFooter>
-        <Button className="w-full">View Event</Button>
+             <Button className="w-full cursor-pointer rounded-lg border border-green-700 bg-white px-4 py-2 text-sm text-green-700 transition-colors hover:bg-green-50">تماشای شعبه </Button>
+
       </CardFooter>
     </Card>
 </div>
@@ -74,7 +76,7 @@ return(
 
 <div className="chalos">
     <Card className="relative mx-auto w-full max-w-sm pt-0">
-      <div className="absolute inset-0 z-30 " />
+      <div className="absolute inset-0 z-30 aspect-video"/>
       <img
         src="Images/Branches-1Image.png"
         alt="Event cover"
@@ -90,7 +92,8 @@ return(
         </CardDescription>
       </CardHeader>
       <CardFooter>
-        <Button className="w-full">View Event</Button>
+              <Button className="w-full cursor-pointer rounded-lg border border-green-700 bg-white px-4 py-2 text-sm text-green-700 transition-colors hover:bg-green-50">تماشای شعبه </Button>
+
       </CardFooter>
     </Card>
 </div>
@@ -99,7 +102,7 @@ return(
 
 <div className="akbatan">
     <Card className="relative mx-auto w-full max-w-sm pt-0">
-      <div className="absolute inset-0 z-30 " />
+      <div className="absolute inset-0 z-30 aspect-video" />
       <img
         src="Images/Branches-Image.png"
         alt="Event cover"
@@ -115,7 +118,7 @@ return(
         </CardDescription>
       </CardHeader>
       <CardFooter>
-        <Button className="w-full">View Event</Button>
+        <Button className="w-full cursor-pointer rounded-lg border border-green-700 bg-white px-4 py-2 text-sm text-green-700 transition-colors hover:bg-green-50">تماشای شعبه </Button>
       </CardFooter>
     </Card>
 </div>
