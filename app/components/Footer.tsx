@@ -3,16 +3,16 @@ export default function Footer() {
   return (
     <footer>
       <div className="footer bg-[url('/Images/Footer.png')] bg-cover bg-center text-white">
-        <div className="grid grid-cols-1 gap-8 px-6 py-8 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-10 px-4 py-8 sm:px-6 md:grid-cols-2 md:gap-8 lg:px-12 lg:py-12">
 
-          <div className="left flex flex-col gap-4">
+          <div className="left flex flex-col gap-5">
 
             <form className="flex items-start gap-3">
-              <label className="w-28 shrink-0 pt-2 text-sm">
+              <label className="w-24 shrink-0 pt-2 text-xs sm:w-28 sm:text-sm">
                 پیام به ترخینه
               </label>
 
-              <div className="flex flex-1 flex-col gap-2">
+              <div className="flex min-w-0 flex-1 flex-col gap-2">
                 <input
                   type="text"
                   placeholder="نام و نام خانوادگی"
@@ -27,7 +27,7 @@ export default function Footer() {
             </form>
 
             <form className="flex items-start gap-3">
-              <label className="w-28 shrink-0 pt-2 text-sm">
+              <label className="w-24 shrink-0 pt-2 text-xs sm:w-28 sm:text-sm">
                 عضویت در خبرنامه
               </label>
 
@@ -47,11 +47,11 @@ export default function Footer() {
             </form>
 
             <form className="flex items-start gap-3">
-              <label className="w-28 shrink-0 pt-2 text-sm">
+              <label className="w-24 shrink-0 pt-2 text-xs sm:w-28 sm:text-sm">
                 ارسال پیام
               </label>
 
-              <div className="flex flex-1 flex-col items-start gap-2">
+              <div className="flex min-w-0 flex-1 flex-col items-start gap-2">
                 <textarea
                   rows={2}
                   placeholder="متن پیام شما"
@@ -67,14 +67,15 @@ export default function Footer() {
             </form>
 
           </div>
+
           <div className="right">
-            <div className="list flex justify-evenly gap-8">
+            <div className="list flex justify-around gap-6 sm:justify-evenly sm:gap-8">
 
               <div>
-                <h3 className="mb-4 text-sm font-bold">
+                <h3 className="mb-4 text-xs font-bold sm:text-sm">
                   دسترسی آسان
                 </h3>
-                <ul className="flex flex-col gap-3 text-xs text-white/80">
+                <ul className="flex flex-col gap-3 text-[11px] text-white/80 sm:text-xs">
                   <li>
                     <a href="#" className="transition hover:text-white">
                       پرسش‌های متداول
@@ -94,10 +95,10 @@ export default function Footer() {
               </div>
 
               <div>
-                <h3 className="mb-4 text-sm font-bold">
+                <h3 className="mb-4 text-xs font-bold sm:text-sm">
                   شعبه‌های ترخینه
                 </h3>
-                <ul className="flex flex-col gap-3 text-xs text-white/80">
+                <ul className="flex flex-col gap-3 text-[11px] text-white/80 sm:text-xs">
                   <li>
                     <a href="#" className="transition hover:text-white">
                       شعبه اکباتان

@@ -1,5 +1,5 @@
 "use client"
-
+import { useState } from "react"
 import Link from "next/link"
 
 import {
@@ -13,12 +13,13 @@ import {
 } from "@/components/ui/navigation-menu"
 
 export default function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
     <header className="border-b border-gray-200 bg-white " dir="rtl">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between gap-8 py-4">
+        <div className= "flex flex-wrap items-center justify-between gap-3 py-3 md:flex-nowrap md:gap-8 md:py-4">
 
-          {/* Logo */}
+         
           <Link
             href="/"
             className="shrink-0 text-2xl font-bold text-green-700"
@@ -53,20 +54,29 @@ export default function Header() {
 
         
           </Link>
-
-          {/* Navigation Menu */}
-          <nav dir="rtl" className="flex flex-1 justify-center">
+<button
+  type="button"
+  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+  className="flex h-10 w-10 items-center justify-center rounded-md border border-gray-200 text-green-700 md:hidden"
+  aria-label="باز و بسته کردن منو"
+  aria-expanded={mobileMenuOpen}
+>
+  <span className="text-2xl">
+    {mobileMenuOpen ? "×" : "☰"}
+  </span>
+</button>
+        <nav dir="rtl" className="hidden flex-1 justify-center md:flex">
             <NavigationMenu>
               <NavigationMenuList className="flex items-center justify-center gap-2">
 
-                {/* Home */}
+            
                 <NavigationMenuItem>
                   <NavigationMenuLink render={<Link href="/" />}>
                     صفحه اصلی
                   </NavigationMenuLink>
                 </NavigationMenuItem>
 
-                {/* Food Menu */}
+        
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>
                     منوی غذا
@@ -127,7 +137,7 @@ export default function Header() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
 
-                {/* Restaurant Branches */}
+           
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>
                     شعب ترخینه
@@ -167,14 +177,13 @@ export default function Header() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
 
-                {/* About */}
+        
                 <NavigationMenuItem>
                   <NavigationMenuLink render={<Link href="/about" />}>
                     درباره ما
                   </NavigationMenuLink>
                 </NavigationMenuItem>
 
-                {/* Contact */}
                 <NavigationMenuItem>
                   <NavigationMenuLink render={<Link href="/contact" />}>
                     تماس با ما
@@ -187,7 +196,6 @@ export default function Header() {
             </NavigationMenu>
           </nav>
 
-          {/* Profile */}
           <div className="shrink-0">
             <Link
               href="/profile"
@@ -198,6 +206,50 @@ export default function Header() {
           </div>
 
         </div>
+
+{mobileMenuOpen && (
+  <nav className="w-full border-t border-gray-200 py-4 md:hidden">
+    <ul className="flex flex-col gap-4 text-sm text-gray-700">
+      <li>
+        <Link href="/" onClick={() => setMobileMenuOpen(false)}>
+          صفحه اصلی
+        </Link>
+      </li>
+
+      <li>
+        <Link href="/menu" onClick={() => setMobileMenuOpen(false)}>
+          منوی غذا
+        </Link>
+      </li>
+
+      <li>
+        <Link href="/branches" onClick={() => setMobileMenuOpen(false)}>
+          شعب ترخینه
+        </Link>
+      </li>
+
+      <li>
+        <Link href="/about" onClick={() => setMobileMenuOpen(false)}>
+          درباره ما
+        </Link>
+      </li>
+
+      <li>
+        <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
+          تماس با ما
+        </Link>
+      </li>
+
+      <li>
+        <Link href="/profile" onClick={() => setMobileMenuOpen(false)}>
+          ورود / ثبت‌نام
+        </Link>
+      </li>
+    </ul>
+  </nav>
+)}
+
+
       </div>
     </header>
   )
