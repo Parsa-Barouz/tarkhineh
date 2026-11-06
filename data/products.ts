@@ -32,7 +32,7 @@ const products = [
   {
     id: 4,
     title: "چلو جوجه کباب",
-    image: "/Images/عکس غذا4.png",
+    image: "/Images/عکس غذا3.png",
     price: "۲۲۰,۰۰۰",
     oldPrice: "۲۴۰,۰۰۰",
     discount: "٪۸",
@@ -42,7 +42,7 @@ const products = [
   {
     id: 5,
     title: "لازانیا",
-    image: "/Images/عکس غذا5.png",
+    image: "/Images/عکس غذا3.png",
     price: "۱۹۵,۰۰۰",
     oldPrice: "۲۱۰,۰۰۰",
     discount: "٪۷",
@@ -52,7 +52,7 @@ const products = [
   {
     id: 6,
     title: "ته‌چین مرغ",
-    image: "/Images/1.png",
+    image: "/Images/عکس غذا3.png",
     price: "۱۸۰,۰۰۰",
     oldPrice: "۲۰۰,۰۰۰",
     discount: "٪۱۰",
@@ -62,7 +62,7 @@ const products = [
   {
     id: 7,
     title: "سالاد سزار",
-    image: "/Images/2.png",
+    image: "/Images/عکس غذا3.png",
     price: "۱۵۵,۰۰۰",
     oldPrice: "۱۷۰,۰۰۰",
     discount: "٪۹",
@@ -82,7 +82,7 @@ const products = [
   {
     id: 9,
     title: "دلمه برگ مو",
-    image: "/Images/4.png",
+    image: "/Images/عکس غذا3.png",
     price: "۱۴۵,۰۰۰",
     oldPrice: "۱۶۰,۰۰۰",
     discount: "٪۹",
@@ -92,7 +92,7 @@ const products = [
   {
     id: 10,
     title: "زرشک پلو با مرغ",
-    image: "/Images/5.png",
+    image: "/Images/عکس غذا3.png",
     price: "۱۹۰,۰۰۰",
     oldPrice: "۲۱۰,۰۰۰",
     discount: "٪۱۰",
@@ -102,7 +102,7 @@ const products = [
   {
     id: 11,
     title: "کوبیده مخصوص",
-    image: "/Images/عکس غذا1.png",
+    image: "/Images/عکس غذا3.png",
     price: "۲۳۰,۰۰۰",
     oldPrice: "۲۵۰,۰۰۰",
     discount: "٪۸",
@@ -112,7 +112,7 @@ const products = [
   {
     id: 12,
     title: "ساندویچ مرغ",
-    image: "/Images/عکس غذا2.png",
+    image: "/Images/عکس غذا3.png",
     price: "۱۲۵,۰۰۰",
     oldPrice: "۱۴۰,۰۰۰",
     discount: "٪۱۰",

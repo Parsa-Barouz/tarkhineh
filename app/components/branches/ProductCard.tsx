@@ -1,6 +1,7 @@
 
-import Image from "next/image";
+
 import { Heart, Star } from "lucide-react";
+import { useState } from "react";
 
 type ProductCardProps = {
   title: string;
@@ -11,7 +12,6 @@ type ProductCardProps = {
   rating: number;
   votes: number;
 };
-
 export default function ProductCard({
   title,
   image,
@@ -26,23 +26,22 @@ export default function ProductCard({
       dir="rtl"
       className="w-full overflow-hidden rounded-xl border border-gray-300 bg-white"
     >
-      {/* تصویر غذا */}
+   
       <div className="relative h-64 w-full">
-        <Image
+        <img
           src={image}
           alt={title}
-          fill
-          className="object-cover"
+          className="object-cover h-full w-full "
         />
       </div>
 
-      {/* اطلاعات محصول */}
+   
       <div className="p-4">
         <h3 className="mb-4 text-center text-xl font-bold text-gray-800">
           {title}
         </h3>
 
-        {/* تخفیف و علاقه‌مندی */}
+      
         <div className="flex items-center justify-between gap-2 text-xs text-gray-400">
           <span className="rounded-full bg-red-50 px-2 py-1 text-red-600">
             {discount}
@@ -54,7 +53,6 @@ export default function ProductCard({
           </span>
         </div>
 
-        {/* قیمت و امتیاز */}
         <div className="mt-3 flex items-center justify-between">
           <div>
             <span className="text-xs text-gray-400 line-through">
@@ -72,7 +70,6 @@ export default function ProductCard({
           </div>
         </div>
 
-        {/* دکمه خرید */}
         <button className="mt-5 w-full rounded-md bg-[#417F56] py-3 font-bold text-white transition hover:bg-[#326743]">
           افزودن به سبد خرید
         </button>

@@ -23,18 +23,34 @@ import { Pagination } from 'swiper/modules';
 export default function sliderproduct() {
   return (
     <>
-      <Swiper
-        slidesPerView={4}
-        centeredSlides={true}
-        spaceBetween={30}
-        grabCursor={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-      
+<Swiper
+
+
+  simulateTouch={false}
+  slidesPerView={3}
+  spaceBetween={30}
+  pagination={{
+    clickable: true,
+  }}
+  modules={[Pagination]}
+  className="mySwiper"
+  breakpoints={{
+    640: {
+      slidesPerView: 2.5,
+      spaceBetween: 16,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 4.2,
+      spaceBetween: 20,
+    },
+  }}
+
+>
+
 
 
           {
@@ -42,14 +58,18 @@ export default function sliderproduct() {
 products.map((item) => (  
 
 <SwiperSlide key={item.id}>
-   
-{    item.title} 
-  { item.image}
-    {item.price}
-    {item.oldPrice}
-    {item.discount}
-   { item.rating}
-   { item.votes}
+  
+
+    <ProductCard
+      title={item.title}
+      image={item.image}
+      price={item.price}
+      oldPrice={item.oldPrice}
+      discount={item.discount}
+      rating={item.rating}
+      votes={item.votes}
+    />
+  
     </SwiperSlide>
     
 ))
