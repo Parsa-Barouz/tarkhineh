@@ -11,19 +11,52 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-
 
 import 'swiper/css';
 import 'swiper/css/pagination';
-
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import { Pagination } from 'swiper/modules';
 
-export default function sliderproduct() {
+
+
+
+function SliderButtons() {
+  const swiper = useSwiper();
+
   return (
     <>
-<Swiper
+
+           <button
+        onClick={() => swiper.slidePrev()}
+        className="absolute left-5 top-1/2 z-10 -translate-y-1/2 rounded-full bg-[#417F56] p-3 text-white"
+      >
+        <ChevronLeft size={22} />
+      </button>
+
+     
+      <button
+        onClick={() => swiper.slideNext()}
+        className="absolute right-5 top-1/2 z-10 -translate-y-1/2 rounded-full bg-[#417F56] p-3 text-white"
+      >
+        <ChevronRight size={22} />
+      </button>
+    </>
+  );
+}
+
+
+
+
+export default function sliderproduct() {
+  return (
+    
+    <>
+        <div className="text flex justify-end py-6 ">
+   <h3 className="font-bold text-2xl">پیشنهاد ویژه</h3>
+      </div>
+<Swiper className="mySwiper relative"
 
 
   simulateTouch={false}
@@ -33,7 +66,6 @@ export default function sliderproduct() {
     clickable: true,
   }}
   modules={[Pagination]}
-  className="mySwiper"
   breakpoints={{
     640: {
       slidesPerView: 2.5,
@@ -81,7 +113,7 @@ products.map((item) => (
        
 
   
-
+<SliderButtons />
       </Swiper>
     </>
   );

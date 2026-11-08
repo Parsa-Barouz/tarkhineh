@@ -9,7 +9,13 @@ return(
  <Header/>
 
    <HeroSlider/>
+
+   <div className="container mx-auto max-w-[1700px] px-4">
+
 <Sliderproduct/>
+<Sliderproduct/>
+<Sliderproduct/>
+   </div>
 </>
    
 

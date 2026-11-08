@@ -22,11 +22,13 @@ export default function ProductCard({
   votes,
 }: ProductCardProps) {
   return (
+    
+    
     <div
-      dir="rtl"
-      className="w-full overflow-hidden rounded-xl border border-gray-300 bg-white"
+    dir="rtl"
+    className="  w-full overflow-hidden rounded-xl border border-gray-300 bg-white"
     >
-   
+  
       <div className="relative h-64 w-full">
         <img
           src={image}
