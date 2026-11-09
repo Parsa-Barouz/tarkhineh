@@ -1,4 +1,5 @@
 "use client";
+import BranchesPage from "../branches/BranchesPage"
 import ProductCard from "./ProductCard";
 import products from "@/data/products";
 import React, { useRef, useState } from 'react';
@@ -47,14 +48,16 @@ function SliderButtons() {
 }
 
 
+type TextTitlepropss = {
+TextTitleprops:string;
+};
 
-
-export default function sliderproduct() {
+export default function sliderproduct(propsSliderproduct:TextTitlepropss) {
   return (
     
     <>
         <div className="text flex justify-end py-6 ">
-   <h3 className="font-bold text-2xl">پیشنهاد ویژه</h3>
+   <h3 className="font-bold text-2xl">{propsSliderproduct.TextTitleprops}</h3>
       </div>
 <Swiper className="mySwiper relative"
 
@@ -117,4 +120,5 @@ products.map((item) => (
       </Swiper>
     </>
   );
+
 }
